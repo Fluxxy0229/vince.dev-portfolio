@@ -14,8 +14,8 @@
   </head>
   <body>
     <button class="hamburger" onclick="toggleSidebar()">
-    <i class="fa fa-bars"></i>
-  </button>
+      <i class="fa fa-bars"></i>
+    </button>
     <div class="sidebar">
       <div class="color">
         <div class="logo">
@@ -192,87 +192,73 @@
       </section>
 
       <section id="about" class="section">
-        <div class="about-image">
-          <img src="home-image.avif" alt="About Me" />
-          <img src="profile.png" alt="Profile" class="profile-pic" />
-          <h4>Mark Vince F. Gammad</h4>
-          <p>Information Technology <i class="fa fa-code"></i></p>
-        </div>
-
-        <div class="about-content">
-          <h2><i class="fa fa-book"></i> EDUCATIONAL ATTAINMENT</h2>
-          <div class="about-content-image" style="margin-bottom: 70px">
-            <img
-              src="isu.png"
-              alt="ISU LOGO"
-              style="
-                width: 100px;
-                height: 100px;
-                margin-left: 15px;
-                margin-top: 10px;
-                display: flex;
-              "
-            />
-            <h3>Isabela State University</h3>
-            <p>Bachelor of Science in Information Technology</p>
-            <h5>2022 - Present Year (Incoming 4th Year)</h5>
-          </div>
-
-          <div class="about-content-image" style="margin-bottom: 80px">
-            <img
-              src="smgchs.png"
-              alt="ISU LOGO"
-              style="
-                width: 100px;
-                height: 100px;
-                margin-left: 15px;
-                margin-top: 10px;
-                display: flex;
-                border-radius: 50%;
-              "
-            />
-            <h3 class="smgchs-h3">
-              San Mateo General Comprehensive High School
-            </h3>
-            <p class="smgchs-p">Humanities and Social Sciences</p>
-            <h5 class="smgchs-h5">2020 - 2022</h5>
-          </div>
-
-          <div class="about-content-image">
-            <img
-              src="smecs.png"
-              alt="ISU LOGO"
-              style="
-                width: 100px;
-                height: 100px;
-                margin-left: 15px;
-                margin-top: 10px;
-                display: flex;
-              "
-            />
-            <h3 class="smecs-h3">San Mateo East Central School</h3>
-            <p class="smecs-p">Elementary Level</p>
-            <h5 class="smecs-h5">2015 - 2016</h5>
+        <div class="about-banner">
+          <img src="home-image.avif" alt="Background" class="banner-bg" />
+          <div class="banner-overlay">
+            <img src="profile.png" alt="Profile" class="banner-profile" />
+            <div class="banner-text">
+              <h2>Mark Vince F. Gammad</h2>
+              <p>Information Technology <i class="fa fa-code"></i></p>
+            </div>
           </div>
         </div>
-        <div class="about-me">
-          <h2><i class="fa fa-user"></i> ABOUT ME</h2>
+
+        <div class="about-columns">
+          <div class="about-left">
+            <h3>ABOUT ME</h3>
+            <p>
+              Hi, I'm Mark Vince F. Gammad, 20 years old, born on October 2,
+              2004. I am from Marasat Grande, San Mateo, Isabela. A passionate
+              and driven BS Information Technology student from San Mateo,
+              Isabela. I specialize in both frontend and backend development,
+              with a growing interest in building smart systems that solve
+              real-world problems. Beyond coding, I enjoy photography,
+              videography, and playing online and outdoor games that sharpen
+              both my creativity and teamwork. I'm always eager to learn new
+              technologies and turn ideas into fully functional, user-friendly
+              solutions. My goal is to become a skilled developer who creates
+              impactful digital experiences and innovations.
+            </p>
+          </div>
+
+          <div class="about-right">
+            <h3>EDUCATIONAL ATTAINMENT</h3>
+
+            <div class="edu-item">
+              <img src="isu.png" alt="ISU Logo" />
+              <div>
+                <strong>Isabela State University</strong><br />
+                Bachelor of Science in Information Technology<br />
+                2022 – Present Year (Incoming 4th Year)
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <img src="smgchs.png" alt="SHS Logo" style="border-radius: 50%;"/>
+              <div>
+                <strong>San Mateo General Comprehensive High School</strong
+                ><br />
+                Humanities and Social Sciences<br />
+                2020 – 2022
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <img src="smecs.png" alt="Elementary Logo" />
+              <div>
+                <strong>San Mateo East Central School</strong><br />
+                Elementary Level<br />
+                2015 – 2016
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-footer">
           <p>
-            Hi, I'm Mark Vince F. Gammad, 20 years old, born on October 2, 2004.
-            I am from Marasat Grande, San Mateo, Isabel. a passionate and driven
-            BS Information Technology student from San Mateo, Isabela. I
-            specialize in both frontend and backend development, with a growing
-            interest in building smart systems that solve real-world problems.
-            Beyond coding, I enjoy photography, videography, and playing online
-            and outdoor games that sharpen both my creativity and teamwork. I'm
-            always eager to learn new technologies and turn ideas into fully
-            functional, user-friendly solutions. My goal is to become a skilled
-            developer who creates impactful digital experiences and innovations.
+            Design and Built by <strong>Mark Vince F. Gammad</strong><br />©2025
+            All Rights Reserved.
           </p>
-        </div>
-        <div class="footer">
-          <h6>Design and Built by Mark Vince F. Gammad</h6>
-          <h6>&copy;2025 All Rights Reserved.</h6>
         </div>
       </section>
 
@@ -385,3 +371,87 @@
     </script>
   </body>
 </html>
+
+<!-- 
+<div class="about-image">
+          <img src="home-image.avif" alt="About Me" />
+          <img src="profile.png" alt="Profile" class="profile-pic" />
+          <h4>Mark Vince F. Gammad</h4>
+          <p>Information Technology <i class="fa fa-code"></i></p>
+        </div>
+
+        <div class="about-content">
+          <h2><i class="fa fa-book"></i> EDUCATIONAL ATTAINMENT</h2>
+          <div class="about-content-image" style="margin-bottom: 70px">
+            <img
+              src="isu.png"
+              alt="ISU LOGO"
+              style="
+                width: 100px;
+                height: 100px;
+                margin-left: 15px;
+                margin-top: 10px;
+                display: flex;
+              "
+            />
+            <h3>Isabela State University</h3>
+            <p>Bachelor of Science in Information Technology</p>
+            <h5>2022 - Present Year (Incoming 4th Year)</h5>
+          </div>
+
+          <div class="about-content-image" style="margin-bottom: 80px">
+            <img
+              src="smgchs.png"
+              alt="ISU LOGO"
+              style="
+                width: 100px;
+                height: 100px;
+                margin-left: 15px;
+                margin-top: 10px;
+                display: flex;
+                border-radius: 50%;
+              "
+            />
+            <h3 class="smgchs-h3">
+              San Mateo General Comprehensive High School
+            </h3>
+            <p class="smgchs-p">Humanities and Social Sciences</p>
+            <h5 class="smgchs-h5">2020 - 2022</h5>
+          </div>
+
+          <div class="about-content-image">
+            <img
+              src="smecs.png"
+              alt="ISU LOGO"
+              style="
+                width: 100px;
+                height: 100px;
+                margin-left: 15px;
+                margin-top: 10px;
+                display: flex;
+              "
+            />
+            <h3 class="smecs-h3">San Mateo East Central School</h3>
+            <p class="smecs-p">Elementary Level</p>
+            <h5 class="smecs-h5">2015 - 2016</h5>
+          </div>
+        </div>
+        <div class="about-me">
+          <h2><i class="fa fa-user"></i> ABOUT ME</h2>
+          <p>
+            Hi, I'm Mark Vince F. Gammad, 20 years old, born on October 2, 2004.
+            I am from Marasat Grande, San Mateo, Isabel. a passionate and driven
+            BS Information Technology student from San Mateo, Isabela. I
+            specialize in both frontend and backend development, with a growing
+            interest in building smart systems that solve real-world problems.
+            Beyond coding, I enjoy photography, videography, and playing online
+            and outdoor games that sharpen both my creativity and teamwork. I'm
+            always eager to learn new technologies and turn ideas into fully
+            functional, user-friendly solutions. My goal is to become a skilled
+            developer who creates impactful digital experiences and innovations.
+          </p>
+        </div>
+        <div class="footer">
+          <h6>Design and Built by Mark Vince F. Gammad</h6>
+          <h6>&copy;2025 All Rights Reserved.</h6>
+        </div> -->
