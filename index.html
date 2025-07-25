@@ -13,6 +13,9 @@
     />
   </head>
   <body>
+    <button class="hamburger" onclick="toggleSidebar()">
+    <i class="fa fa-bars"></i>
+  </button>
     <div class="sidebar">
       <div class="color">
         <div class="logo">
@@ -33,6 +36,8 @@
       </div>
     </div>
 
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
     <div class="main-content">
       <section id="home" class="section active-section">
         <div class="home">
@@ -48,7 +53,7 @@
           </div>
 
           <div class="home-container">
-            <h2 class="fa fa-code">Skills Set</h2>
+            <h2><i class="fa fa-code"></i> Skills</h2>
             <div class="slider-track">
               <div class="slide">
                 <img
@@ -144,7 +149,7 @@
         </div>
 
         <div class="contact-me">
-          <h2><i class="fa fa-envelope-open-o"> Get in touch</i></h2>
+          <h2><i class="fa fa-envelope-open-o"></i> Get in touch</h2>
 
           <div class="contacts-item">
             <div class="contact-box">
@@ -230,7 +235,7 @@
               San Mateo General Comprehensive High School
             </h3>
             <p class="smgchs-p">Humanities and Social Sciences</p>
-            <h5 class="smgchs-h5">2022 - Present Year (Incoming 4th Year)</h5>
+            <h5 class="smgchs-h5">2020 - 2022</h5>
           </div>
 
           <div class="about-content-image">
@@ -247,7 +252,7 @@
             />
             <h3 class="smecs-h3">San Mateo East Central School</h3>
             <p class="smecs-p">Elementary Level</p>
-            <h5 class="smecs-h5">2022 - Present Year (Incoming 4th Year)</h5>
+            <h5 class="smecs-h5">2015 - 2016</h5>
           </div>
         </div>
         <div class="about-me">
@@ -372,6 +377,11 @@
           parent.classList.toggle("open");
         });
       });
+    </script>
+    <script>
+      function toggleSidebar() {
+        document.querySelector(".sidebar").classList.toggle("active");
+      }
     </script>
   </body>
 </html>
