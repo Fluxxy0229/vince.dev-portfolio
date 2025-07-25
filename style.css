@@ -438,7 +438,7 @@ body {
   background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
-#home .footer h6 {
+#home .footer p {
   font-size: 0.8rem;
   color: #ccc;
   margin: 0;
@@ -568,7 +568,7 @@ body {
 }
 
 .about-footer {
-  background-color: #1e3a8a;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
   text-align: center;
   padding: 15px;
   color: white;
@@ -722,10 +722,10 @@ body {
   }
 
   #home .footer {
-    width: 100%;
-    margin-top: 30px;
-    margin-right: -20px;
-    border-radius: 0;
+    width: 89%;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 10px;
   }
 
   .stats-wrapper {
@@ -734,4 +734,3 @@ body {
   }
 
 }
-
