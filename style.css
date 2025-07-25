@@ -500,11 +500,11 @@ body {
 }
 
 .banner-text h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   position: absolute;
   top: 5px;
-  left: 150px;
+  left: 145px;
 }
 
 .banner-text p {
@@ -512,7 +512,7 @@ body {
   color: #ccc;
   position: absolute;
   top: 35px;
-  left: 150px;
+  left: 145px;
 }
 
 .about-columns {
