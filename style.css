@@ -455,7 +455,7 @@ body {
 #about {
   width: 100%;
   color: white;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .about-banner {
@@ -573,8 +573,126 @@ body {
   padding: 15px;
   color: white;
   font-size: 13px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
 }
+
+#skills {
+  padding: 20px 20px;
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.skills-title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #efc958;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.skills-title i {
+  margin-right: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-1px);
+  background-color: hsl(253, 100%, 20%);
+}
+
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 22px;
+  color: #efc958;
+  margin-bottom: 10px;
+}
+
+.skill-card .stars {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-card h3 {
+    font-size: 20px;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-title h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 14px;
+  }
+
+  .skill-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+  }
+
+  .skill-card .stars {
+    font-size: 16px;
+  }
+
+  .skill-card p {
+    font-size: 12px;
+  }
+}
+
 
 @media (max-width: 768px) {
   #about {
@@ -595,7 +713,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
   }
 
   .banner-profile {
@@ -625,10 +743,7 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-}
 
-
-@media (max-width: 768px) {
   .sidebar {
     position: fixed;
     left: 0;
@@ -669,7 +784,7 @@ body {
   .sidebar.active ~ .sidebar-overlay {
     display: block;
   }
-  
+
   body {
     flex-direction: column;
     overflow-y: auto;
@@ -732,5 +847,4 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-
 }
